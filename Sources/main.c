@@ -59,6 +59,7 @@
 #include "BrushlessMotor.h"
 #include "SchrittmotorLenkung.h"
 #include "GreiferMotor.h"
+#include "SchrittmotorFoerderband.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -67,102 +68,72 @@
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
 #include "RTOS.h"
-uint8_t c1 = 0;
-uint8_t c2 = 0;
-uint8_t a1 = 0;
-uint8_t a2 = 0;
-
-
+int inputPosLenkung; //
+int inputGeschwindigkeit;//
 /*
  * TASKS IMPLEMENTIEREN
  * */
-void rTask(void* parameters)
+
+// Task für Lenkung
+void taskLenkung(void* parameters)
 {
 	for (;;)
 	{
-		LED_GREEN_Neg();
-		RTOS_Wait(500);
+		void setLenkung(inputPosLenkung);
 	}
 }
 void gTask(void* parameters)
 {
 	for (;;)
-	{ for(c2;c2>=0;c2--){
-		//LED_GREEN_Neg();
-		RTOS_Wait(500);
-	}
+
 	}
 }
 void bTask(void* parameters)
 {
 	for (;;){
 
-		for(c1;c1 >=0;c1--){
-		//LED_BLUE_Neg();
-		RTOS_Wait(500);
+
 
 		}
 	}
 }
 
-void writeTask(void* parameters){
-	  CLS1_Init();
-	  LED_GREEN_Neg();
+void taskRxTx(void* parameters){
+	int inputByte1;
+	int inputByte2;
+	int inputByte3;
+
+	CLS1_Init();
+	LED_GREEN_Neg();
+
 	  for(;;){
 
-		  CLS1_ReadChar(&c1);
+		  CLS1_ReadChar(&inputByte1);
 
-		  if(c1!=0){
-			  CLS1_SendNum8u(c1,CLS1_GetStdio()->stdOut);
-		  CLS1_ReadChar(&c2);
+		  if(inputByte1==1){
 
-		  if(c1==1){
-			  CLS1_SendNum8u(c2+1,CLS1_GetStdio()->stdOut);
+		  CLS1_ReadChar(&inputPosLenkung);
+		  WAIT1_WaitOSms(10);
+		  CLS1_ReadChar(&inputGeschwindigkeit);
 
-			  }
+		}else{
 
+			LED_BLUE_Neg();
 
-		  else if (c1==2){
-			  CLS1_SendNum8u(c2+2,CLS1_GetStdio()->stdOut);
-
-		  	  }
-		  }
-
-	  c1 =0;
-	  }
+		}
 
 	  }
-	 // for(;;){
-	  //uint8_t i = 0;
-
-		// for(i=0;i<20;i++){
-			 // CLS1_SendNum8u(i, CLS1_GetStdio()->stdOut);
-			 // WAIT1_WaitOSms(1000);
-			 // LED_GREEN_Neg();
-		 // }
-
-		 //for(i=20;i>0;i--){
-
-			 // CLS1_SendNum8u(i, CLS1_GetStdio()->stdOut);
-			 // WAIT1_WaitOSms(1000);
-			 // LED_BLUE_Neg();
-
-		  		 // }
-
-	 // }
 
 
 /*
  * RTOS FUEGT TASKS IN SCHEDULER EIN
  * */
-void init(void)
+void initRTOS(void)
 {
 
-	//RTOS_AddTask(rTask, "rTask");
-	//WAIT1_Waitms(100);
-	//RTOS_AddTask(gTask, "gTask");
+	RTOS_AddTask(taskLenkung, "taskLenkung");
+	RTOS_AddTask(taskRxTx, "taskRxTx");
 	//RTOS_AddTask(bTask, "bTask");
-	RTOS_AddTask(writeTask,"writeTask");
 	RTOS_Init();
 
 }
@@ -181,12 +152,12 @@ int main(void)
   /* Write your code here */
   /* For example: for(;;) { } */
 
-  	 // init();
+  	 initRTOS();
 
 
 	//runDCMotor();
 	//initSMLenkung();
-  	 runBLDC();
+  	//runBLDC();
 	//setSMLenkung();
 
 

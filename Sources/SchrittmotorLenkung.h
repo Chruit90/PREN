@@ -7,10 +7,20 @@
 
 #ifndef SOURCES_SCHRITTMOTORLENKUNG_H_
 #define SOURCES_SCHRITTMOTORLENKUNG_H_
-
+//Initialiserung der Lenkung
 void initSMLenkung(void);
+/* @brief 	Berechnung Anzahl Änderungssteps und Aufruf der Funktion setWinkel
 
-void setSMLenkung(void);
+   @param
+   	   	   inputPos: Gewünschte Lenkungsposition in Grad (-180° bis 180°)
+
+
+
+*/
+void setLenkung(int inputPos);
+
+void setWinkel(int aenderungPos);
+
 
 
 

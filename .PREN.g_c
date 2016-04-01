@@ -3063,6 +3063,7 @@
       <AsemblAge>-1</AsemblAge>
       <GenNumMethods>0</GenNumMethods>
       <GenNumEvents>0</GenNumEvents>
+      <ISR_Handle />
       <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
       <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
       <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
