@@ -64,10 +64,11 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/CLS1.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/KSDK1.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/UTIL1.h \
- ../Sources/BrushlessMotor.h ../Sources/SchrittmotorLenkung.h \
- ../Sources/GreiferMotor.h ../Sources/RTOS.h \
+ ../Sources/RTOS.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOS.h \
- C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h \
+ ../Sources/BrushlessMotor.h ../Sources/SchrittmotorLenkung.h \
+ ../Sources/GreiferMotor.h ../Sources/SchrittmotorFoerderband.h
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Cpu.h:
 
@@ -199,14 +200,16 @@ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/KSDK1.h:
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/UTIL1.h:
 
+../Sources/RTOS.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOS.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h:
+
 ../Sources/BrushlessMotor.h:
 
 ../Sources/SchrittmotorLenkung.h:
 
 ../Sources/GreiferMotor.h:
 
-../Sources/RTOS.h:
-
-C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOS.h:
-
-C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h:
+../Sources/SchrittmotorFoerderband.h:

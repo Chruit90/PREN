@@ -56,10 +56,12 @@
 #include "CLS1.h"
 #include "KSDK1.h"
 #include "UTIL1.h"
+#include "RTOS.h"
 #include "BrushlessMotor.h"
 #include "SchrittmotorLenkung.h"
 #include "GreiferMotor.h"
 #include "SchrittmotorFoerderband.h"
+
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -67,7 +69,6 @@
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
-#include "RTOS.h"
 int inputPosLenkung; //
 int inputGeschwindigkeit;//
 /*
@@ -82,26 +83,12 @@ void taskLenkung(void* parameters)
 		void setLenkung(inputPosLenkung);
 	}
 }
-void gTask(void* parameters)
-{
-	for (;;)
 
-	}
-}
-void bTask(void* parameters)
-{
-	for (;;){
-
-
-
-		}
-	}
-}
 
 void taskRxTx(void* parameters){
-	int inputByte1;
-	int inputByte2;
-	int inputByte3;
+	char inputByte1;
+	char inputByte2;
+	char inputByte3;
 
 	CLS1_Init();
 	LED_GREEN_Neg();
@@ -112,9 +99,13 @@ void taskRxTx(void* parameters){
 
 		  if(inputByte1==1){
 
-		  CLS1_ReadChar(&inputPosLenkung);
+		  CLS1_ReadChar(&inputByte2);
+		  inputPosLenkung = inputByte2;
+
 		  WAIT1_WaitOSms(10);
-		  CLS1_ReadChar(&inputGeschwindigkeit);
+
+		  CLS1_ReadChar(&inputByte3);
+		  inputGeschwindigkeit = inputByte3;
 
 		}else{
 
@@ -124,7 +115,7 @@ void taskRxTx(void* parameters){
 
 	  }
 
-
+}
 /*
  * RTOS FUEGT TASKS IN SCHEDULER EIN
  * */
@@ -133,7 +124,7 @@ void initRTOS(void)
 
 	RTOS_AddTask(taskLenkung, "taskLenkung");
 	RTOS_AddTask(taskRxTx, "taskRxTx");
-	//RTOS_AddTask(bTask, "bTask");
+
 	RTOS_Init();
 
 }
@@ -153,7 +144,7 @@ int main(void)
   /* For example: for(;;) { } */
 
   	 initRTOS();
-
+  	 for(;;){};
 
 	//runDCMotor();
 	//initSMLenkung();
@@ -162,16 +153,6 @@ int main(void)
 
 
 
-
-  //WAIT1_Waitms(100);
-
- // RTOS_AddTask(gTask, "gTask");
-
-
-
-  while (1)
-  {
-  }
 
   /*** Don't write any code pass this line, or it will be deleted during code generation. ***/
   /*** RTOS startup code. Macro PEX_RTOS_START is defined by the RTOS component. DON'T MODIFY THIS CODE!!! ***/

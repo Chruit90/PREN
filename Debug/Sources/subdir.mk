@@ -8,6 +8,7 @@ C_SRCS += \
 ../Sources/Events.c \
 ../Sources/GreiferMotor.c \
 ../Sources/RTOS.c \
+../Sources/SchrittmotorFoerderband.c \
 ../Sources/SchrittmotorLenkung.c \
 ../Sources/main.c 
 
@@ -16,6 +17,7 @@ OBJS += \
 ./Sources/Events.o \
 ./Sources/GreiferMotor.o \
 ./Sources/RTOS.o \
+./Sources/SchrittmotorFoerderband.o \
 ./Sources/SchrittmotorLenkung.o \
 ./Sources/main.o 
 
@@ -24,6 +26,7 @@ C_DEPS += \
 ./Sources/Events.d \
 ./Sources/GreiferMotor.d \
 ./Sources/RTOS.d \
+./Sources/SchrittmotorFoerderband.d \
 ./Sources/SchrittmotorLenkung.d \
 ./Sources/main.d 
 
