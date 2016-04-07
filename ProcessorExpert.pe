@@ -2,11 +2,17 @@
 <PEproject>
   <Header>
     <Name>PREN</Name>
+<<<<<<< Updated upstream
     <SavedBy>Philipp</SavedBy>
     <ModificationStamp>31</ModificationStamp>
     <Date>2016-02-17</Date>
+=======
+    <SavedBy>Lucius Schaerer</SavedBy>
+    <ModificationStamp>29</ModificationStamp>
+    <Date>2016-04-02</Date>
+>>>>>>> Stashed changes
     <IDE>Eclipse IDE</IDE>
-    <PEversion>1.12.0.RT7_b1515-0427</PEversion>
+    <PEversion>1.10.1.RT6_b1444-1070</PEversion>
   </Header>
   <Options>
     <ProjectMainModule>main</ProjectMainModule>
@@ -29,7 +35,11 @@
     <UseExistingModules>true</UseExistingModules>
     <RenamePeripheries>false</RenamePeripheries>
     <Autodependency>true</Autodependency>
+<<<<<<< Updated upstream
     <ProjectCompNumb>59</ProjectCompNumb>
+=======
+    <ProjectCompNumb>54</ProjectCompNumb>
+>>>>>>> Stashed changes
     <DelUnusedPreviouslyGenFiles>true</DelUnusedPreviouslyGenFiles>
     <GeneratedCodeFrozen>false</GeneratedCodeFrozen>
     <AssignInitComponentNameToPrph>true</AssignInitComponentNameToPrph>
@@ -7862,7 +7872,7 @@
         <ItemSymbol>Tmg_Period</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>init:20 ms;prec:5%;RTS:none;clksrc_presc[SpeedMode0]Auto select;clksrc_presc[SpeedMode1]Auto select;clksrc_presc[SpeedMode2]Auto select;clksrc_presc[SpeedMode3]Auto select;clksrc_presc[SpeedMode4]Auto select;clksrc_presc[SpeedMode5]Auto select;clksrc_presc[SpeedMode6]Auto select;clksrc_presc[SpeedMode7]Auto select</Value>
+        <Value>20 ms</Value>
         <RuntimeSetting>0</RuntimeSetting>
         <ReqDevPrescHigh>-1</ReqDevPrescHigh>
         <ReqDevPrescLow>-1</ReqDevPrescLow>
@@ -8088,7 +8098,7 @@
         <ItemSymbol>Tmg_ChanOffset0</ItemSymbol>
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
-        <Value>init:1.5 ms;prec:5%;RTS:none;clksrc_presc[SpeedMode0]Auto select;clksrc_presc[SpeedMode1]Auto select;clksrc_presc[SpeedMode2]Auto select;clksrc_presc[SpeedMode3]Auto select;clksrc_presc[SpeedMode4]Auto select;clksrc_presc[SpeedMode5]Auto select;clksrc_presc[SpeedMode6]Auto select;clksrc_presc[SpeedMode7]Auto select</Value>
+        <Value>1.5 ms</Value>
         <RuntimeSetting>0</RuntimeSetting>
         <ReqDevPrescHigh>-1</ReqDevPrescHigh>
         <ReqDevPrescLow>-1</ReqDevPrescLow>
@@ -9889,6 +9899,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value />
+        <RegCompType />
+        <InheritedComponentState />
       </ItemState>
       <ItemState>
         <ItemSymbol>Transmitter</ItemSymbol>
@@ -9929,6 +9941,8 @@
         <ReadOnly>false</ReadOnly>
         <UserReadOnly>false</UserReadOnly>
         <Value />
+        <RegCompType />
+        <InheritedComponentState />
       </ItemState>
       <ItemState>
         <ItemSymbol>_BdRate</ItemSymbol>
@@ -10321,7 +10335,7 @@
           <ComponentUUID>com.freescale.processorexpert.ldd.serial_ldd</ComponentUUID>
           <BeanType>Serial_LDD</BeanType>
           <Name>ASerialLdd1</Name>
-          <CompNumb>34</CompNumb>
+          <CompNumb>52</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>PHONE_LDD</IconName>
@@ -17129,7 +17143,7 @@
     <UserFolderName />
     <Comment lines_count="0" />
     <Template />
-    <BeanVersion>02.241</BeanVersion>
+    <BeanVersion>02.240</BeanVersion>
     <LightErrorsIgnored>false</LightErrorsIgnored>
     <Properties>
       <ItemState>
@@ -17579,14 +17593,14 @@
           <ComponentUUID>com.freescale.processorexpert.ldd.pwm_ldd</ComponentUUID>
           <BeanType>PWM_LDD</BeanType>
           <Name>PwmLdd2</Name>
-          <CompNumb>50</CompNumb>
+          <CompNumb>53</CompNumb>
           <CompEnabled>true</CompEnabled>
           <GenCodeMode>ALWAYS_WRITE</GenCodeMode>
           <IconName>SIGNAL_LDD</IconName>
           <UserFolderName />
           <Comment lines_count="0" />
           <Template />
-          <BeanVersion>01.014</BeanVersion>
+          <BeanVersion>01.013</BeanVersion>
           <LightErrorsIgnored>false</LightErrorsIgnored>
           <Properties>
             <ItemState>
@@ -17893,7 +17907,7 @@
               <ReadOnly>false</ReadOnly>
               <UserReadOnly>false</UserReadOnly>
               <Value>TU2</Value>
-              <TypeSpecNameState />
+              <TypeSpecNameState>PeriodicInterrupt_for_LDD</TypeSpecNameState>
             </ItemState>
           </Properties>
           <Methods>
