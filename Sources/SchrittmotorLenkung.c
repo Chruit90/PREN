@@ -13,6 +13,7 @@
 #include "LED_GREEN.h"
 #include "LEDpin1.h"
 #include "WAIT1.h"
+
 #define UEBERSETZUNG (74/34) // Übersetzung der Zahnräder
 #define SCHRITTWINKEL 1.8		// Schrittwinkel Schrittmotor
 #define WAITTIME 2 // Wert für WAIT
@@ -56,7 +57,13 @@ void setSMLenkung(void){
 	}
 }
 
-void setLenkung(int inputPos){
+int setLenkung(int inputPos){
+
+	if(inputPos>90 && inputPos<-90){ // Überprüfung, ob inputPos im gültigen Bereich ist
+
+		return -1;
+
+	}
 
 	int8_t inputPosStep = inputPos/(UEBERSETZUNG*SCHRITTWINKEL) ;//intPos umgerechnet in STEPs
 	int8_t aenderungStep = aktuellePosStep-inputPosStep;
@@ -73,6 +80,8 @@ void setLenkung(int inputPos){
 	}
 
 	aktuellePosStep += aenderungStep;
+
+	return 0;
 
 }
 

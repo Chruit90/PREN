@@ -7,15 +7,15 @@
 **     Version     : Component 02.241, Driver 01.01, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **         This component implements a pulse-width modulation generator
 **         that generates signal with variable duty and fixed cycle. 
 **     Settings    :
 **          Component name                                 : DCMotor
-**          PWM or PPG device                              : TPM0_C0V
+**          PWM or PPG device                              : TPM0_C2V
 **          Duty compare                                   : 
-**          Output pin                                     : ADC0_SE15/TSI0_CH14/PTC1/LLWU_P6/RTC_CLKIN/I2C1_SCL/TPM0_CH0
+**          Output pin                                     : PTD2/SPI0_MOSI/UART2_RX/TPM0_CH2/SPI0_MISO
 **          Output pin signal                              : 
 **          Counter                                        : TPM0_CNT
 **          Interrupt service/event                        : Disabled

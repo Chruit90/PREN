@@ -12,12 +12,12 @@ void initSMLenkung(void);
 /* @brief 	Berechnung Anzahl Änderungssteps und Aufruf der Funktion setWinkel
 
    @param
-   	   	   inputPos: Gewünschte Lenkungsposition in Grad (-180° bis 180°)
+   	   	   inputPos: Gewünschte Lenkungsposition in Grad (-90° bis 90°)
 
 
 
 */
-void setLenkung(int inputPos);
+int setLenkung(int inputPos);
 
 void setWinkel(int aenderungPos);
 

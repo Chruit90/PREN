@@ -25,7 +25,10 @@ Generated_Code/Cpu.o: ../Generated_Code/Cpu.c \
  ../Generated_Code/Lenk_DIR.h ../Generated_Code/Lenk_MS1.h \
  ../Generated_Code/Lenk_MS2.h ../Generated_Code/Lenk_MS3.h \
  ../Generated_Code/DCMotor.h ../Generated_Code/PwmLdd2.h \
- ../Generated_Code/TU2.h \
+ ../Generated_Code/TU2.h ../Generated_Code/Band_STEP.h \
+ ../Generated_Code/Band_DIR.h ../Generated_Code/Band_MS1.h \
+ ../Generated_Code/Band_MS2.h ../Generated_Code/Band_MS3.h \
+ ../Generated_Code/DCMotor_DIR.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Sources/Events.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PE_Types.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PE_Error.h \
@@ -44,6 +47,12 @@ Generated_Code/Cpu.o: ../Generated_Code/Cpu.c \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/DCMotor.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PwmLdd2.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/TU2.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_STEP.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_DIR.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS1.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS2.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS3.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/DCMotor_DIR.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/WAIT1.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FRTOS1.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Pwm1.h \
@@ -154,6 +163,18 @@ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Static_Code/PDD/GPIO_PDD.h:
 
 ../Generated_Code/TU2.h:
 
+../Generated_Code/Band_STEP.h:
+
+../Generated_Code/Band_DIR.h:
+
+../Generated_Code/Band_MS1.h:
+
+../Generated_Code/Band_MS2.h:
+
+../Generated_Code/Band_MS3.h:
+
+../Generated_Code/DCMotor_DIR.h:
+
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Sources/Events.h:
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PE_Types.h:
@@ -189,6 +210,18 @@ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/DCMotor.h:
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PwmLdd2.h:
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/TU2.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_STEP.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_DIR.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS1.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS2.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS3.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/DCMotor_DIR.h:
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/WAIT1.h:
 

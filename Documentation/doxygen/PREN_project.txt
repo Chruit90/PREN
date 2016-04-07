@@ -34,6 +34,12 @@
 - \subpage Lenk_MS3
 - \subpage TU2
 - \subpage PwmLdd2
+- \subpage Band_STEP
+- \subpage Band_DIR
+- \subpage Band_MS1
+- \subpage Band_MS2
+- \subpage Band_MS3
+- \subpage DCMotor_DIR
 
 */
 

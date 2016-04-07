@@ -7,7 +7,7 @@
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -17,7 +17,7 @@
 **         portable to various microprocessors.
 **     Settings    :
 **          Component name                                 : Lenk_MS1
-**          Pin for I/O                                    : PTE5
+**          Pin for I/O                                    : PTA5/USB_CLKIN/TPM0_CH2
 **          Pin signal                                     : 
 **          Direction                                      : Output
 **          Initialization                                 : 
@@ -127,14 +127,14 @@ LDD_TDeviceData* Lenk_MS1_Init(LDD_TUserData *UserDataPtr)
   DeviceDataPrv = &DeviceDataPrv__DEFAULT_RTOS_ALLOC;
   DeviceDataPrv->UserDataPtr = UserDataPtr; /* Store the RTOS device structure */
   /* Configure pin as output */
-  /* GPIOE_PDDR: PDD|=0x20 */
-  GPIOE_PDDR |= GPIO_PDDR_PDD(0x20);
+  /* GPIOA_PDDR: PDD|=0x20 */
+  GPIOA_PDDR |= GPIO_PDDR_PDD(0x20);
   /* Set initialization value */
-  /* GPIOE_PDOR: PDO&=~0x20 */
-  GPIOE_PDOR &= (uint32_t)~(uint32_t)(GPIO_PDOR_PDO(0x20));
+  /* GPIOA_PDOR: PDO&=~0x20 */
+  GPIOA_PDOR &= (uint32_t)~(uint32_t)(GPIO_PDOR_PDO(0x20));
   /* Initialization of Port Control register */
-  /* PORTE_PCR5: ISF=0,MUX=1 */
-  PORTE_PCR5 = (uint32_t)((PORTE_PCR5 & (uint32_t)~(uint32_t)(
+  /* PORTA_PCR5: ISF=0,MUX=1 */
+  PORTA_PCR5 = (uint32_t)((PORTA_PCR5 & (uint32_t)~(uint32_t)(
                 PORT_PCR_ISF_MASK |
                 PORT_PCR_MUX(0x06)
                )) | (uint32_t)(

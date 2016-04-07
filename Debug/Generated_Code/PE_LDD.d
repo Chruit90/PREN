@@ -26,7 +26,10 @@ Generated_Code/PE_LDD.o: ../Generated_Code/PE_LDD.c \
  ../Generated_Code/Lenk_DIR.h ../Generated_Code/Lenk_MS1.h \
  ../Generated_Code/Lenk_MS2.h ../Generated_Code/Lenk_MS3.h \
  ../Generated_Code/DCMotor.h ../Generated_Code/PwmLdd2.h \
- ../Generated_Code/TU2.h
+ ../Generated_Code/TU2.h ../Generated_Code/Band_STEP.h \
+ ../Generated_Code/Band_DIR.h ../Generated_Code/Band_MS1.h \
+ ../Generated_Code/Band_MS2.h ../Generated_Code/Band_MS3.h \
+ ../Generated_Code/DCMotor_DIR.h
 
 ../Generated_Code/FreeRTOS.h:
 
@@ -125,3 +128,15 @@ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Static_Code/PDD/GPIO_PDD.h:
 ../Generated_Code/PwmLdd2.h:
 
 ../Generated_Code/TU2.h:
+
+../Generated_Code/Band_STEP.h:
+
+../Generated_Code/Band_DIR.h:
+
+../Generated_Code/Band_MS1.h:
+
+../Generated_Code/Band_MS2.h:
+
+../Generated_Code/Band_MS3.h:
+
+../Generated_Code/DCMotor_DIR.h:

@@ -7,7 +7,7 @@
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -17,7 +17,7 @@
 **         portable to various microprocessors.
 **     Settings    :
 **          Component name                                 : Lenk_DIR
-**          Pin for I/O                                    : ADC0_DM3/ADC0_SE7a/PTE23/TPM2_CH1/UART2_RX
+**          Pin for I/O                                    : PTA12/TPM1_CH0
 **          Pin signal                                     : 
 **          Direction                                      : Output
 **          Initialization                                 : 
@@ -103,7 +103,7 @@ extern "C" {
 
 
 /*! Peripheral base address of a device allocated by the component. This constant can be used directly in PDD macros. */
-#define Lenk_DIR_PRPH_BASE_ADDRESS  0x400FF100U
+#define Lenk_DIR_PRPH_BASE_ADDRESS  0x400FF000U
   
 /*! Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. */
 #define Lenk_DIR_DeviceData  ((LDD_TDeviceData *)PE_LDD_GetDeviceStructure(PE_LDD_COMPONENT_Lenk_DIR_ID))
@@ -117,9 +117,9 @@ extern "C" {
 #define Lenk_DIR_NegVal_METHOD_ENABLED /*!< NegVal method of the component Lenk_DIR is enabled (generated) */
 
 /* Definition of implementation constants */
-#define Lenk_DIR_MODULE_BASE_ADDRESS FPTE_BASE_PTR /*!< Name of macro used as the base address */
-#define Lenk_DIR_PORTCONTROL_BASE_ADDRESS PORTE_BASE_PTR /*!< Name of macro used as the base address */
-#define Lenk_DIR_PORT_MASK 0x00800000U /*!< Mask of the allocated pin from the port */
+#define Lenk_DIR_MODULE_BASE_ADDRESS FPTA_BASE_PTR /*!< Name of macro used as the base address */
+#define Lenk_DIR_PORTCONTROL_BASE_ADDRESS PORTA_BASE_PTR /*!< Name of macro used as the base address */
+#define Lenk_DIR_PORT_MASK 0x1000U     /*!< Mask of the allocated pin from the port */
 
 
 

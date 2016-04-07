@@ -7,7 +7,7 @@
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -17,7 +17,7 @@
 **         portable to various microprocessors.
 **     Settings    :
 **          Component name                                 : Lenk_MS3
-**          Pin for I/O                                    : ADC0_SE11/TSI0_CH15/PTC2/I2C1_SDA/TPM0_CH1
+**          Pin for I/O                                    : CMP0_IN3/PTC9/I2C0_SDA/TPM0_CH5
 **          Pin signal                                     : 
 **          Direction                                      : Output
 **          Initialization                                 : 
@@ -117,7 +117,7 @@ extern "C" {
 /* Definition of implementation constants */
 #define Lenk_MS3_MODULE_BASE_ADDRESS FPTC_BASE_PTR /*!< Name of macro used as the base address */
 #define Lenk_MS3_PORTCONTROL_BASE_ADDRESS PORTC_BASE_PTR /*!< Name of macro used as the base address */
-#define Lenk_MS3_PORT_MASK 0x04U       /*!< Mask of the allocated pin from the port */
+#define Lenk_MS3_PORT_MASK 0x0200U     /*!< Mask of the allocated pin from the port */
 
 
 

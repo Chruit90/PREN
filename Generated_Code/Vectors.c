@@ -6,7 +6,7 @@
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **
 **     Settings    :
@@ -81,6 +81,12 @@
   #include "DCMotor.h"
   #include "PwmLdd2.h"
   #include "TU2.h"
+  #include "Band_STEP.h"
+  #include "Band_DIR.h"
+  #include "Band_MS1.h"
+  #include "Band_MS2.h"
+  #include "Band_MS3.h"
+  #include "DCMotor_DIR.h"
   #include "Events.h"
 
 

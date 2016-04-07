@@ -7,7 +7,7 @@
 **     Version     : Component 01.033, Driver 01.03, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **         The HAL BitIO component provides a low level API for unified
 **         access to general purpose digital input/output pins across
@@ -17,7 +17,7 @@
 **         portable to various microprocessors.
 **     Settings    :
 **          Component name                                 : Lenk_MS2
-**          Pin for I/O                                    : PTA12/TPM1_CH0
+**          Pin for I/O                                    : CMP0_IN2/PTC8/I2C0_SCL/TPM0_CH4
 **          Pin signal                                     : 
 **          Direction                                      : Output
 **          Initialization                                 : 
@@ -127,19 +127,19 @@ LDD_TDeviceData* Lenk_MS2_Init(LDD_TUserData *UserDataPtr)
   DeviceDataPrv = &DeviceDataPrv__DEFAULT_RTOS_ALLOC;
   DeviceDataPrv->UserDataPtr = UserDataPtr; /* Store the RTOS device structure */
   /* Configure pin as output */
-  /* GPIOA_PDDR: PDD|=0x1000 */
-  GPIOA_PDDR |= GPIO_PDDR_PDD(0x1000);
+  /* GPIOC_PDDR: PDD|=0x0100 */
+  GPIOC_PDDR |= GPIO_PDDR_PDD(0x0100);
   /* Set initialization value */
-  /* GPIOA_PDOR: PDO&=~0x1000 */
-  GPIOA_PDOR &= (uint32_t)~(uint32_t)(GPIO_PDOR_PDO(0x1000));
+  /* GPIOC_PDOR: PDO&=~0x0100 */
+  GPIOC_PDOR &= (uint32_t)~(uint32_t)(GPIO_PDOR_PDO(0x0100));
   /* Initialization of Port Control register */
-  /* PORTA_PCR12: ISF=0,MUX=1 */
-  PORTA_PCR12 = (uint32_t)((PORTA_PCR12 & (uint32_t)~(uint32_t)(
-                 PORT_PCR_ISF_MASK |
-                 PORT_PCR_MUX(0x06)
-                )) | (uint32_t)(
-                 PORT_PCR_MUX(0x01)
-                ));
+  /* PORTC_PCR8: ISF=0,MUX=1 */
+  PORTC_PCR8 = (uint32_t)((PORTC_PCR8 & (uint32_t)~(uint32_t)(
+                PORT_PCR_ISF_MASK |
+                PORT_PCR_MUX(0x06)
+               )) | (uint32_t)(
+                PORT_PCR_MUX(0x01)
+               ));
   /* Registration of the device structure */
   PE_LDD_RegisterDeviceStructure(PE_LDD_COMPONENT_Lenk_MS2_ID,DeviceDataPrv);
   return ((LDD_TDeviceData *)DeviceDataPrv);

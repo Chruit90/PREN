@@ -43,6 +43,12 @@
 #include "DCMotor.h"
 #include "PwmLdd2.h"
 #include "TU2.h"
+#include "Band_STEP.h"
+#include "Band_DIR.h"
+#include "Band_MS1.h"
+#include "Band_MS2.h"
+#include "Band_MS3.h"
+#include "DCMotor_DIR.h"
 #include "WAIT1.h"
 #include "FRTOS1.h"
 #include "Pwm1.h"
@@ -59,8 +65,8 @@
 #include "RTOS.h"
 #include "BrushlessMotor.h"
 #include "SchrittmotorLenkung.h"
-#include "GreiferMotor.h"
-#include "SchrittmotorFoerderband.h"
+#include "Greifmechanismus.h"
+#include "ReadSend.h"
 
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
@@ -69,8 +75,6 @@
 #include "IO_Map.h"
 /* User includes (#include below this line is not maintained by Processor Expert) */
 
-int inputPosLenkung; //
-int inputGeschwindigkeit;//
 /*
  * TASKS IMPLEMENTIEREN
  * */
@@ -80,38 +84,34 @@ void taskLenkung(void* parameters)
 {
 	for (;;)
 	{
-		void setLenkung(inputPosLenkung);
+		 setLenkung(inputPosLenkung);
 	}
 }
 
+void taskAufladevorgang(void* parameters)
+{
+	for (;;)
+	{
+
+	}
+}
+
+void taskAbladevorgang(void* parameters)
+{
+	for(;;){}
+}
 
 void taskRxTx(void* parameters){
-	char inputByte1;
-	char inputByte2;
-	char inputByte3;
 
 	CLS1_Init();
 	LED_GREEN_Neg();
 
 	  for(;;){
 
-		  CLS1_ReadChar(&inputByte1);
 
-		  if(inputByte1==1){
-
-		  CLS1_ReadChar(&inputByte2);
-		  inputPosLenkung = inputByte2;
-
-		  WAIT1_WaitOSms(10);
-
-		  CLS1_ReadChar(&inputByte3);
-		  inputGeschwindigkeit = inputByte3;
-
-		}else{
-
-			LED_BLUE_Neg();
-
-		}
+		  clearBuffer();
+		  read();
+		  datenAuslesen();
 
 	  }
 
@@ -123,6 +123,8 @@ void initRTOS(void)
 {
 
 	RTOS_AddTask(taskLenkung, "taskLenkung");
+	RTOS_AddTask(taskAufladevorgang, "taskAufladevorgang");
+	RTOS_AddTask(taskAbladevorgang, "taskAbladevorgang");
 	RTOS_AddTask(taskRxTx, "taskRxTx");
 
 	RTOS_Init();

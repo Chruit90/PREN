@@ -32,6 +32,12 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Static_Code/PDD/TPM_PDD.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PwmLdd2.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/TU2.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_STEP.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_DIR.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS1.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS2.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS3.h \
+ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/DCMotor_DIR.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/WAIT1.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOS.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h \
@@ -68,7 +74,7 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOS.h \
  C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h \
  ../Sources/BrushlessMotor.h ../Sources/SchrittmotorLenkung.h \
- ../Sources/GreiferMotor.h ../Sources/SchrittmotorFoerderband.h
+ ../Sources/Greifmechanismus.h ../Sources/ReadSend.h
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Cpu.h:
 
@@ -135,6 +141,18 @@ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Static_Code/PDD/TPM_PDD.h:
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/PwmLdd2.h:
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/TU2.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_STEP.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_DIR.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS1.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS2.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/Band_MS3.h:
+
+C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/DCMotor_DIR.h:
 
 C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/WAIT1.h:
 
@@ -210,6 +228,6 @@ C:/Users/Klaus\ Jordan/Desktop/PREN2/PREN/Generated_Code/FreeRTOSConfig.h:
 
 ../Sources/SchrittmotorLenkung.h:
 
-../Sources/GreiferMotor.h:
+../Sources/Greifmechanismus.h:
 
-../Sources/SchrittmotorFoerderband.h:
+../Sources/ReadSend.h:

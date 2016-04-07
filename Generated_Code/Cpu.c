@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : KL25P80M48SF0RM, Rev.3, Sep 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-03-31, 08:56, # CodeGen: 0
+**     Date/Time   : 2016-04-06, 22:28, # CodeGen: 18
 **     Abstract    :
 **
 **     Settings    :
@@ -269,6 +269,12 @@
 #include "DCMotor.h"
 #include "PwmLdd2.h"
 #include "TU2.h"
+#include "Band_STEP.h"
+#include "Band_DIR.h"
+#include "Band_MS1.h"
+#include "Band_MS2.h"
+#include "Band_MS3.h"
+#include "DCMotor_DIR.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -486,6 +492,18 @@ void PE_low_level_init(void)
   (void)Lenk_MS3_Init(NULL);
   /* ### PWM_LDD "PwmLdd2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)PwmLdd2_Init(NULL);
+  /* ### BitIO_LDD "Band_STEP" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)Band_STEP_Init(NULL);
+  /* ### BitIO_LDD "Band_DIR" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)Band_DIR_Init(NULL);
+  /* ### BitIO_LDD "Band_MS1" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)Band_MS1_Init(NULL);
+  /* ### BitIO_LDD "Band_MS2" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)Band_MS2_Init(NULL);
+  /* ### BitIO_LDD "Band_MS3" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)Band_MS3_Init(NULL);
+  /* ### BitIO_LDD "DCMotor_DIR" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
+  (void)DCMotor_DIR_Init(NULL);
 }
   /* Flash configuration field */
   __attribute__ ((section (".cfmconfig"))) const uint8_t _cfm[0x10] = {
