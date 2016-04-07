@@ -14,6 +14,8 @@
 
 void runBLDC(void){
 	uint8_t pos;
+	int a;
+	int b;
 
 	//BLDC_SetPos(0);
 	//WAIT1_Waitms(7000);

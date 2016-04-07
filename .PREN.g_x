@@ -121,7 +121,7 @@
       <File Name="Documentation/doxygen/pex.doxyfile" FileDate="2016-03-31, 08:56:43" FileAge="1459407403213" FileType="45637" CompNumb="2" />
       <File Name="Static_Code/PDD/SIM_PDD.h" FileDate="2016-02-17, 18:20:40" FileAge="1455729640000" FileType="1048576" />
       <File Name="Documentation/doxygen/Band_MS1_component.txt" FileDate="2016-04-06, 22:28:36" FileAge="1459974516453" FileType="45637" CompNumb="54" />
-      <File Name="Sources/main.c" FileDate="2016-04-07, 10:59:44" FileAge="1460019584710" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2016-04-07, 21:33:17" FileAge="1460057597886" FileType="128" />
       <File Name="Static_Code/PDD/DMAMUX_PDD.h" FileDate="2016-02-17, 18:20:40" FileAge="1455729640000" FileType="1048576" />
       <File Name="Generated_Code/croutine.h" FileDate="2016-03-31, 08:56:43" FileAge="1459407403495" FileType="45637" CompNumb="17" />
       <File Name="Documentation/doxygen/Band_STEP_component.txt" FileDate="2016-04-06, 22:28:36" FileAge="1459974516516" FileType="45637" CompNumb="52" />
@@ -147,7 +147,7 @@
       <File Name="Generated_Code/Pwm1.h" FileDate="2016-03-31, 08:56:43" FileAge="1459407403401" FileType="45637" CompNumb="36" />
       <File Name="Static_Code/PDD/SPI_PDD.h" FileDate="2016-02-17, 18:20:40" FileAge="1455729640000" FileType="1048576" />
       <File Name="Generated_Code/task.h" FileDate="2016-03-31, 08:56:43" FileAge="1459407403620" FileType="45637" CompNumb="17" />
-      <File Name="Documentation/PREN_SIGNALS.txt" FileDate="2016-04-07, 11:15:45" FileAge="1460020545894" FileType="3072" />
+      <File Name="Documentation/PREN_SIGNALS.txt" FileDate="2016-04-07, 21:34:21" FileAge="1460057661952" FileType="3072" />
       <File Name="Generated_Code/Pwm1.c" FileDate="2016-03-31, 08:56:43" FileAge="1459407403401" FileType="45637" CompNumb="36" />
       <File Name="Static_Code/PDD/FTFA_PDD.h" FileDate="2016-02-17, 18:20:40" FileAge="1455729640000" FileType="1048576" />
       <File Name="Static_Code/PDD/SysTick_PDD.h" FileDate="2016-02-17, 18:20:40" FileAge="1455729640000" FileType="1048576" />
@@ -185,5 +185,5 @@
       <File Name="Generated_Code/AS1.c" FileDate="2016-03-31, 08:56:43" FileAge="1459407403432" FileType="45637" CompNumb="33" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>23</CodeGenReference>
+  <CodeGenReference>27</CodeGenReference>
 </CodeGenerationInfo>

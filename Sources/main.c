@@ -78,7 +78,7 @@
 /*
  * TASKS IMPLEMENTIEREN
  * */
-
+//
 // Task für Lenkung
 void taskLenkung(void* parameters)
 {
@@ -127,7 +127,7 @@ void initRTOS(void)
 	RTOS_AddTask(taskAbladevorgang, "taskAbladevorgang");
 	RTOS_AddTask(taskRxTx, "taskRxTx");
 
-	RTOS_Init();
+	RTOS_Init();//
 
 }
 

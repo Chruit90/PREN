@@ -111,8 +111,8 @@ Discarded input sections
  .data          0x00000000        0x0 ./Sources/BrushlessMotor.o
  .bss           0x00000000        0x0 ./Sources/BrushlessMotor.o
  .text.runBLDC  0x00000000       0x68 ./Sources/BrushlessMotor.o
- .debug_info    0x00000000       0xe2 ./Sources/BrushlessMotor.o
- .debug_abbrev  0x00000000       0x96 ./Sources/BrushlessMotor.o
+ .debug_info    0x00000000       0xf4 ./Sources/BrushlessMotor.o
+ .debug_abbrev  0x00000000       0xa3 ./Sources/BrushlessMotor.o
  .debug_aranges
                 0x00000000       0x20 ./Sources/BrushlessMotor.o
  .debug_ranges  0x00000000       0x10 ./Sources/BrushlessMotor.o
@@ -145,7 +145,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x40 ./Sources/BrushlessMotor.o
  .debug_macro   0x00000000       0x1f ./Sources/BrushlessMotor.o
  .debug_macro   0x00000000       0x47 ./Sources/BrushlessMotor.o
- .debug_line    0x00000000      0x3d0 ./Sources/BrushlessMotor.o
+ .debug_line    0x00000000      0x3d2 ./Sources/BrushlessMotor.o
  .debug_str     0x00000000    0x33065 ./Sources/BrushlessMotor.o
  .comment       0x00000000       0x71 ./Sources/BrushlessMotor.o
  .ARM.attributes
